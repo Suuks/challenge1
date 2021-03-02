@@ -1,0 +1,134 @@
+* {
+  background-color: #845ec2;
+  margin: 0;
+  padding: 0;
+  background-image: url("images/space.jpg");
+    background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.grafieken {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+	background: rgb(40,40,40);
+	background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(98,118,182,1) 49%, rgba(174,120,222,1) 100%);
+}
+
+.grafiek {
+  width: 99%;
+  overflow: hidden;
+  border: 2px solid white;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) /*tablet*/ {
+  * {
+    background-color: #d65db1;
+	background-image: url("images/space.jpg");
+    background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	 background-size: auto;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .grafieken {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+	background: rgb(40,40,40);
+	background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(98,118,182,1) 49%, rgba(174,120,222,1) 100%);;
+  }
+
+
+  .grafiek {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) /*laptop*/ {
+  * {
+    background-color: #ff6f91;
+	background-image: url("images/space.jpg");
+    background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	 background-size: auto;
+  }
+  
+
+  .grafiek {
+    width: 30%;
+    margin-bottom: 40px;
+	
+  }
+  
+  .grafieken {background: rgb(40,40,40);
+background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(98,118,182,1) 49%, rgba(174,120,222,1) 100%);}
+
+  .grafiek:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1400px) /*pc*/ {
+  * { background-image: url("images/space.jpg");
+    background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	 background-size: auto;
+	
+  }
+  
+    .grafieken {background: rgb(40,40,40);
+background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(98,118,182,1) 49%, rgba(174,120,222,1) 100%);}
+}
